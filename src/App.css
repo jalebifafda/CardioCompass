@@ -1,10 +1,5 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: rgb(236, 147, 95);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +8,14 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.label {
+  display: table-cell;
 }
 
-.App-link {
-  color: #61dafb;
+.info{
+  display: grid;
+  border: 15%;
+  background-color: rgb(236, 147, 95);
 }
 
 @keyframes App-logo-spin {
