@@ -1,19 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <img src={require("./HeartCompass_Logo_Design.jpg")} width="400" />
       <form className="info">
         <label>
           Name:
-          <input type="text" name="name" />
-          <br></br>
+          <div>
+            <input type="text" name="name" />
+          </div>
           Age:
-          <input type="number" name="age" />
-          <br></br>
+          <div>
+            <input type="number" name="age" />
+          </div>
           Sex:
-          <form>
+          <div>
             <label>
               <input type="radio" name="sex" value="male" />
               Male
@@ -22,19 +24,21 @@ function App() {
               <input type="radio" name="sex" value="female" />
               Female
             </label>
-          </form>
-          <br></br>
+          </div>
           Cholesterol:
-          <input type="number" name="cholesterol" />
-          <br></br>
+          <div>
+            <input type="number" name="cholesterol" />
+          </div>
           Blood Pressure:
-          <input type="text" name="bloodpressure" />
-          <br></br>
+          <div>
+            <input type="text" name="bloodpressure" />
+          </div>
           Heart Rate:
-          <input type="number" name="heartrate" />
-          <br></br>
+          <div>
+            <input type="number" name="heartrate" />
+          </div>
           Diabetes:
-          <form>
+          <div>
             <label>
               <input type="radio" name="diabetes" value="yes" />
               Yes
@@ -44,10 +48,9 @@ function App() {
               <input type="radio" name="diabetes" value="no" />
               No
             </label>
-          </form>
-          <br></br>
+          </div>
           Family History:
-          <form>
+          <div>
             <label>
               <input type="radio" name="familyhistory" value="yes" />
               Yes
@@ -57,10 +60,9 @@ function App() {
               <input type="radio" name="familyhistory" value="no" />
               No
             </label>
-          </form>
-          <br></br>
+          </div>
           Smoking:
-          <form>
+          <div>
             <label>
               <input type="radio" name="smoking" value="yes" />
               Yes
@@ -69,10 +71,9 @@ function App() {
               <input type="radio" name="smoking" value="no" />
               No
             </label>
-          </form>
-          <br></br>
+          </div>
           Obesity:
-          <form>
+          <div>
             <label>
               <input type="radio" name="obesity" value="yes" />
               Yes
@@ -81,10 +82,9 @@ function App() {
               <input type="radio" name="obesity" value="no" />
               No
             </label>
-          </form>
-          <br></br>
+          </div>
           Alcohol Consumption:
-          <form>
+          <div>
             <label>
               <input type="radio" name="alcohol" value="yes" />
               Yes
@@ -93,13 +93,13 @@ function App() {
               <input type="radio" name="alcohol" value="no" />
               No
             </label>
-          </form>
-          <br></br>
+          </div>
           Exercise Hours Per Week:
-          <input type="number" name="exercise" />
-          <br></br>
+          <div>
+            <input type="number" name="exercise" />
+          </div>
           Diet:
-          <form>
+          <div>
             <label>
               <input type="radio" name="diet" value="average" />
               Average
@@ -108,15 +108,13 @@ function App() {
               <input type="radio" name="diet" value="unhealthy" />
               Unhealthy
             </label>
-
             <label>
               <input type="radio" name="diet" value="healthy" />
               Healthy
             </label>
-          </form>
-          <br></br>
+          </div>
           Previous Heart Problems:
-          <form>
+          <div>
             <label>
               <input type="radio" name="previous" value="yes" />
               Yes
@@ -125,10 +123,9 @@ function App() {
               <input type="radio" name="previous" value="no" />
               No
             </label>
-          </form>
-          <br></br>
+          </div>
           Medication Use:
-          <form>
+          <div>
             <label>
               <input type="radio" name="medication" value="yes" />
               Yes
@@ -137,10 +134,9 @@ function App() {
               <input type="radio" name="medication" value="no" />
               No
             </label>
-          </form>
-          <br></br>
+          </div>
           Stress Level:
-          <form>
+          <div>
             <label>
               <input type="radio" name="stress" value="1" />1
             </label>
@@ -172,24 +168,30 @@ function App() {
               <input type="radio" name="stress" value="10" />
               10
             </label>
-          </form>
-          <br></br>
+          </div>
           Sedentary Hours Per Day:
-          <input type="number" name="sedentary" /> <br></br>
+          <div>
+            <input type="number" name="sedentary" />
+          </div>
           BMI:
-          <input type="number" name="bmi" />
-          <br></br>
+          <div>
+            <input type="number" name="bmi" />
+          </div>
           Triglycerides:
-          <input type="number" name="triglycerides" />
-          <br></br>
+          <div>
+            <input type="number" name="triglycerides" />
+          </div>
           Physical Activity Days Per Week:
-          <input type="number" name="physicaldays" />
-          <br></br>
+          <div>
+            <input type="number" name="physicaldays" />
+          </div>
           Sleep Hours Per Day:
-          <input type="number" name="sleep" />
+          <div>
+            <input type="number" name="sleep" />
+          </div>
         </label>
         <br></br>
-        <input type="submit" value="Submit" />
+        <button>Submit</button>
       </form>
     </div>
   );
