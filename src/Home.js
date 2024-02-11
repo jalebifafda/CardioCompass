@@ -114,9 +114,9 @@ const Home = (props) => {
             Diabetes:
             <div>
               <label onChange={(e) => setDiabetes(e.target.value)}>
-                <input type="radio" name="diabetes" value="yes" />
+                <input type="radio" name="diabetes" value="1" />
                 Yes
-                <input type="radio" name="diabetes" value="no" />
+                <input type="radio" name="diabetes" value="0" />
                 No
               </label>
             </div>
@@ -124,9 +124,9 @@ const Home = (props) => {
             Family History of Heart Disease:
             <div>
               <label onChange={(e) => setFamily(e.target.value)}>
-                <input type="radio" name="familyhistory" value="yes" />
+                <input type="radio" name="familyhistory" value="1" />
                 Yes
-                <input type="radio" name="familyhistory" value="no" />
+                <input type="radio" name="familyhistory" value="0" />
                 No
               </label>
             </div>
@@ -134,9 +134,9 @@ const Home = (props) => {
             Do you Smoke?:
             <div>
               <label onChange={(e) => setSmoke(e.target.value)}>
-                <input type="radio" name="smoking" value="yes" />
+                <input type="radio" name="smoking" value="1" />
                 Yes
-                <input type="radio" name="smoking" value="no" />
+                <input type="radio" name="smoking" value="0" />
                 No
               </label>
             </div>
@@ -144,9 +144,9 @@ const Home = (props) => {
             Obesity:
             <div>
               <label onChange={(e) => setObesity(e.target.value)}>
-                <input type="radio" name="obesity" value="yes" />
+                <input type="radio" name="obesity" value="1" />
                 Yes
-                <input type="radio" name="obesity" value="no" />
+                <input type="radio" name="obesity" value="0" />
                 No
               </label>
             </div>
@@ -154,9 +154,9 @@ const Home = (props) => {
             Alcohol Consumption:
             <div>
               <label onChange={(e) => setAlcohol(e.target.value)}>
-                <input type="radio" name="alcohol" value="yes" />
+                <input type="radio" name="alcohol" value="1" />
                 Yes
-                <input type="radio" name="alcohol" value="no" />
+                <input type="radio" name="alcohol" value="0" />
                 No
               </label>
             </div>
@@ -181,9 +181,9 @@ const Home = (props) => {
             Previous Heart Problems:
             <div>
               <label onChange={(e) => setPrevious(e.target.value)}>
-                <input type="radio" name="previous" value="yes" />
+                <input type="radio" name="previous" value="1" />
                 Yes
-                <input type="radio" name="previous" value="no" />
+                <input type="radio" name="previous" value="0" />
                 No
               </label>
             </div>
@@ -191,9 +191,9 @@ const Home = (props) => {
             Medication Use:
             <div>
               <label onChange={(e) => setMeds(e.target.value)}>
-                <input type="radio" name="medication" value="yes" />
+                <input type="radio" name="medication" value="1" />
                 Yes
-                <input type="radio" name="medication" value="no" />
+                <input type="radio" name="medication" value="0" />
                 No
               </label>
             </div>
