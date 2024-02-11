@@ -75,129 +75,161 @@ const Home = (props) => {
     
     return (
     <div className="App">
+       <img src={require("./HeartCompass_Logo_Design.jpg")} width="400" />
         {returned ? <Results l={res}/> : <div className="info">
           <label onChange={(e) => setName(e.target.value)}>
             Name:
+            <div>
             <input type="text" name="name" />
+            </div>
             </label>
-            <br></br>
+            
             <label onChange={(e) => setAge(e.target.value)}>
             Age:
+            <div>
             <input type="number" name="age" />
+            </div>
             </label>
-            <br></br>
+            
             Sex:
             <div>
               <label onChange={(e) => setSex(e.target.value)}>
+
                 <input type="radio" name="sex" value="male" />
                 Male
+                
                 <input type="radio" name="sex" value="female" />
                 Female
               </label>
             </div>
             <label onChange={(e) => setCholesterol(e.target.value)}>
-            <br></br>
+            
             Cholesterol:
+            <div>
             <input type="number" name="cholesterol" />
+            </div>
             </label>
-            <br></br>
+            
             <label onChange={(e) => setBp(e.target.value)}>
             Blood Pressure:
+            <div>
             <input type="text" name="bloodpressure" />
+            </div>
             </label>
-            <br></br>
+            
             <label onChange={(e) => setHeart(e.target.value)}>
             Heart Rate:
+            <div>
             <input type="number" name="heartrate" />
+            </div>
             </label>
-            <br></br>
+            
             Diabetes:
             <div>
               <label onChange={(e) => setDiabetes(e.target.value)}>
+
                 <input type="radio" name="diabetes" value="1" />
                 Yes
+
                 <input type="radio" name="diabetes" value="0" />
                 No
               </label>
             </div>
-            <br></br>
+            
             Family History of Heart Disease:
             <div>
               <label onChange={(e) => setFamily(e.target.value)}>
+
                 <input type="radio" name="familyhistory" value="1" />
                 Yes
+
                 <input type="radio" name="familyhistory" value="0" />
                 No
               </label>
             </div>
-            <br></br>
+            
             Do you Smoke?:
             <div>
               <label onChange={(e) => setSmoke(e.target.value)}>
+
                 <input type="radio" name="smoking" value="1" />
                 Yes
+
                 <input type="radio" name="smoking" value="0" />
                 No
               </label>
             </div>
-            <br></br>
+            
             Obesity:
             <div>
               <label onChange={(e) => setObesity(e.target.value)}>
+
                 <input type="radio" name="obesity" value="1" />
                 Yes
+
                 <input type="radio" name="obesity" value="0" />
                 No
               </label>
             </div>
-            <br></br>
+            
             Alcohol Consumption:
             <div>
               <label onChange={(e) => setAlcohol(e.target.value)}>
+
                 <input type="radio" name="alcohol" value="1" />
                 Yes
+
                 <input type="radio" name="alcohol" value="0" />
                 No
               </label>
             </div>
-            <br></br>
+            
             <label onChange={(e) => setExercise(e.target.value)}>
             Exercise Hours Per Week:
+            <div>
             <input type="number" name="exercise" />
+            </div>
             </label>
-            <br></br>
+            
             Diet:
             <div>
               <label onChange={(e) => setDiet(e.target.value)}>
+
                 <input type="radio" name="diet" value="Average" />
                 Average
+
                 <input type="radio" name="diet" value="Unhealthy" />
                 Unhealthy
+
                 <input type="radio" name="diet" value="Healthy" />
                 Healthy
               </label>
             </div>
-            <br></br>
+            
             Previous Heart Problems:
             <div>
               <label onChange={(e) => setPrevious(e.target.value)}>
+
                 <input type="radio" name="previous" value="1" />
                 Yes
+
                 <input type="radio" name="previous" value="0" />
                 No
               </label>
             </div>
-            <br></br>
+            
             Medication Use:
             <div>
               <label onChange={(e) => setMeds(e.target.value)}>
+
                 <input type="radio" name="medication" value="1" />
                 Yes
+
                 <input type="radio" name="medication" value="0" />
                 No
               </label>
             </div>
-            <br></br>
+            
             <label onChange={(e) => setStress(e.target.value)}>
             Stress Level:
             <div>
@@ -215,31 +247,41 @@ const Home = (props) => {
                 10
             </div>
               </label>
-            <br></br>
+            
             <label onChange={(e) => setSedentary(e.target.value)}>
             Sedentary Hours Per Day:
-            <input type="number" name="sedentary" /> <br></br>
+            <div>
+            <input type="number" name="sedentary" /> 
+            </div>
             </label>
             <label onChange={(e) => setBMI(e.target.value)}>
             BMI:
+            <div>
             <input type="number" name="bmi" />
+            </div>
             </label>
             <label onChange={(e) => setTri(e.target.value)}>
-            <br></br>
+            
             Triglycerides:
+            <div>
             <input type="number" name="triglycerides" />
+            </div>
             </label>
-            <br></br>
+            
             <label onChange={(e) => setPhysical(e.target.value)}>
             Physical Activity Days Per Week:
+            <div>
             <input type="number" name="physicaldays" />
+            </div>
             </label>
-            <br></br>
+            
             <label onChange={(e) => setSleep(e.target.value)}>
             Sleep Hours Per Day:
+        <div>            
             <input type="number" name="sleep" />
+            </div>
             </label>
-          <br></br>
+          
           <button onClick={handleSubmit}>Submit</button>
         </div>}
       </div>
